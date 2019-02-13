@@ -16,15 +16,15 @@
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
 	<!--Facebook iframe script-->
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+	<div id="fb-root"></div>
+	<script>(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 </head>
 
 <body>
@@ -156,344 +156,307 @@
 		<!-- Intro -->
 
 		<div class="intro">
+			<div class="row">
+				<div class="col text-left">
+					<h2>A brief intorduction.</h2>
+					<hr style="border-color: grey;">
+					<br>
+					<div>
+						<p>The Law Wheelers are a friendly and welcoming cycling club serving the Lanarkshire area. The club promotes
+							cycling at all levels from novice to experienced rider.</p>
+					</div>
+					<div class="home_buttons">
+						<div class="button home_button"><a href="#">View activity on Facebook</a></div>
+					</div>
+				</div>
+
+			</div>
 			<!--<div class="intro_content d-flex flex-row flex-wrap align-items-start justify-content-between" style="width:100%;">-->
-					<div class="row">
-							<div class="col text-center">
-								<div class="pricing_section_title" style="color:#151E3B; text-align: left;">Facebook</div>
-							</div>
-						</div>				
-						<hr style="border-color: #151E3B;">
-				<div class="fb-page" data-href="https://www.facebook.com/Lawwheelers/" data-tabs="timeline" data-width="500"
-				data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-				data-show-facepile="false">
+			<!--<div class="row">
+				<div class="col text-center">
+					<div class="pricing_section_title" style="color:#151E3B; text-align: left;">Facebook Feed</div>
+				</div>
+			</div>
+			<hr style="border-color: #151E3B;">
+			<div class="fb-page" data-href="https://www.facebook.com/Lawwheelers/" data-tabs="timeline" data-width="500"
+			 data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+			 data-show-facepile="false">
 				<blockquote cite="https://www.facebook.com/Lawwheelers/" class="fb-xfbml-parse-ignore">
 			</div>
+			-->
+		</div>
+	</div>
+
+	<!-- Pricing -->
+
+	<div class="pricing" id="strava">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/background-2.jpg"
+		 data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<!--Strava Logo-->
+					<div class="pricing_section_title"><img src="images/strava-logo.png" style="height:40px;"></div>
+				</div>
+			</div>
+			<div class="row pricing_row">
+
+				<!-- Strava General Data Item -->
+				<div class="col-lg-6 pricing_col">
+					<iframe allowtransparency frameborder='0' height='160' scrolling='no' src='https://www.strava.com/clubs/4679/latest-rides/fe82bc49276ff459b40da7084f84e8a6173d177a?show_rides=false'
+					 width='100%'></iframe>
+				</div>
+
+				<!-- Strava Latest Rides Item -->
+				<div class="col-lg-6 pricing_col">
+					<iframe allowtransparency frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/4679/latest-rides/fe82bc49276ff459b40da7084f84e8a6173d177a?show_rides=true'
+					 width='100%'></iframe>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Pricing -->
+	<!-- Calendar -->
 
-		<div class="pricing">
-			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/background-2.jpg"
-			 data-speed="0.8"></div>
+	<div class="calendar">
+		<div class="container reset_container">
+			<div class="row">
+				<div class="col-xl-5 calendar_col">
+					<div class="calendar_container">
+						<div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
+							<div>
+								<div class="calendar_icon"><img src="images/calendar.svg" alt=""></div>
+							</div>
+							<div class="calendar_title">Upcoming Events</div>
+						</div>
+						<div>
+							<div style="align-content: center;">
+								<div class="fb-page text-center" data-href="https://www.facebook.com/Lawwheelers/" data-tabs="events"
+								 data-width="500" data-height="1000" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
+								 data-show-facepile="false">
+									<blockquote cite="https://www.facebook.com/Lawwheelers/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lawwheelers/">Law
+											Wheelers Cycling Club</a></blockquote>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-7 calendar_col">
+					<div class="calendar_container">
+						<div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
+							<div>
+								<div class="calendar_icon"><img src="images/calendar.svg" alt=""></div>
+							</div>
+							<div class="calendar_title">Past Club Records</div>
+						</div>
+						<table style="border-collapse:collapse;border-spacing:0;table-layout: inherit; width: inherit; align-content: center;"
+						 class="tg">
+							<colgroup>
+								<col style="width: 66px">
+								<col style="width: 66px">
+								<col style="width: 98px">
+								<col style="width: 128px">
+								<col style="width: 144px">
+							</colgroup>
+							<tr>
+								<th style="font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"
+								 colspan="5">Time Trial Records</th>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Distance</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Time</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Date</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Who</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Link
+									to Activity/Result</td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">10m</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">21:33</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">21/08/2016</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Graham
+									Smith</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">25m</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">55:31</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">10/09/2016</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Sean
+									Quinn</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">30m</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">1:08:15</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">15/07/2016</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Sean
+									Quinn</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">50m</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">1:55:48</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">10/07/2016</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Sean
+									Quinn</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">100m</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">4:09:15</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">21/08/2016</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">Sean
+									Quinn</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">250m
+									43yards</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">12
+									hours</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">1970</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top">A
+									Kirk</td>
+								<td style="font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:inherit;text-align:center;vertical-align:top"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/main-background.jpg"
+		 data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+						<div class="cta_title">Ready to get stuck in?</div>
+						<div class="button cta_button"><a href="#">Join Now</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
 			<div class="container">
 				<div class="row">
-					<div class="col text-center">
-						<div class="pricing_section_title">Strava</div>
-					</div>
-				</div>
-				<div class="row pricing_row">
 
-					<!-- Strava General Data Item -->
-					<div class="col-lg-6 pricing_col">
-								<iframe allowtransparency frameborder='0'
-								height='160' scrolling='no' src='https://www.strava.com/clubs/4679/latest-rides/fe82bc49276ff459b40da7084f84e8a6173d177a?show_rides=false'
-								width='100%'></iframe>
-					</div>
-
-					<!-- Strava Latest Rides Item -->
-					<div class="col-lg-6 pricing_col">
-							<iframe allowtransparency frameborder='0' height='454' scrolling='no' src='https://www.strava.com/clubs/4679/latest-rides/fe82bc49276ff459b40da7084f84e8a6173d177a?show_rides=true'
-							width='100%'></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Calendar -->
-
-		<div class="calendar">
-			<div class="container reset_container">
-				<div class="row">
-					<div class="col-xl-6 calendar_col">
-						<div class="calendar_container">
-							<div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-								<div>
-									<div class="calendar_icon"><img src="images/calendar.svg" alt=""></div>
-								</div>
-								<div class="calendar_title">22 april events calendar</div>
+					<!-- Footer Column -->
+					<div class="col-lg-4 footer_col">
+						<div class="footer_about">
+							<div>
+								<a href="#">
+									<div class="logo_container d-flex flex-row align-items-start justify-content-start">
+										<div class="logo_image">
+											<div><img src="images/brand/logo-white.png" alt=""></div>
+										</div>
+										<div class="logo_content">
+											<div id="logo_text" class="logo_text logo_text_not_ie">Law Wheelers</div>
+											<div class="logo_sub">Cycling Club</div>
+										</div>
+									</div>
+								</a>
 							</div>
-							<div class="calendar_items">
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_1.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>14:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Business 101</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_2.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>15:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>About technology</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_3.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>17:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Conference calls</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_4.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>20:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Drinks and dinner</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
+							<div class="footer_about_text">
+								<p>The Law Wheelers are a friendly and welcoming cycling club serving the Lanarkshire area. The club promotes
+									cycling at all levels from novice to experienced rider.</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-xl-6 calendar_col">
-						<div class="calendar_container">
-							<div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
-								<div>
-									<div class="calendar_icon"><img src="images/calendar.svg" alt=""></div>
-								</div>
-								<div class="calendar_title">23 april events calendar</div>
-							</div>
-							<div class="calendar_items">
+					<!-- Footer Column -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Speakers</a></li>
+								<li><a href="#">Event Dates</a></li>
+								<li><a href="#">Information</a></li>
+								<li><a href="#">Calendar</a></li>
+							</ul>
+						</div>
+					</div>
 
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_5.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>14:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Business 101</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
+					<!-- Footer Column -->
+					<div class="col-lg-3 footer_col">
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">Logistics</a></li>
+								<li><a href="#">Our Partners</a></li>
+								<li><a href="#">Testimonials</a></li>
+								<li><a href="#">Price Plans</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
 
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_6.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>15:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>About technology</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_7.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>17:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Conference calls</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-								<!-- Calendar Item -->
-								<div class="calendar_item d-flex flex-row align-items-center justify-content-start">
-									<div>
-										<div class="calendar_item_image"><img src="images/event_8.jpg" alt=""></div>
-									</div>
-									<div class="calendar_item_time">
-										<div>20:00</div>
-										<div>Auditorium</div>
-									</div>
-									<div class="calendar_item_text">
-										<div>Drinks and dinner</div>
-										<div>08 AM - 04 PM</div>
-										<div>Speaker: Daniel Hill</div>
-									</div>
-								</div>
-
-							</div>
+					<!-- Footer Column -->
+					<div class="col-lg-2 footer_col">
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Speakers</a></li>
+								<li><a href="#">Event Dates</a></li>
+								<li><a href="#">Information</a></li>
+								<li><a href="#">Calendar</a></li>
+							</ul>
 						</div>
 					</div>
 
 				</div>
 			</div>
 		</div>
-
-		<!-- Call to action -->
-
-		<div class="cta">
-			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cta_1.jpg" data-speed="0.8"></div>
+		<div class="footer_extra">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<div class="cta_content text-center">
-							<div class="cta_title">Get your tickets now!</div>
-							<div class="button cta_button"><a href="#">Find out more</a></div>
+						<div class="footer_extra_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
+							<div class="footer_social">
+								<div class="footer_social_title">Follow us on Social Media</div>
+								<ul class="footer_social_list">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="footer_extra_right ml-lg-auto text-lg-right">
+								<div class="footer_extra_links">
+									<ul>
+										<li><a href="contact.html">Contact us</a></li>
+										<li><a href="#">Sitemap</a></li>
+										<li><a href="#">Privacy</a></li>
+									</ul>
+								</div>
+								<div class="copyright">
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy;
+									<script>document.write(new Date().getFullYear());</script> Law Wheelers, All rights reserved | This template
+									is made with
+									<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Footer -->
-
-		<footer class="footer">
-			<div class="footer_content">
-				<div class="container">
-					<div class="row">
-
-						<!-- Footer Column -->
-						<div class="col-lg-4 footer_col">
-							<div class="footer_about">
-								<div>
-									<a href="#">
-										<div class="logo_container d-flex flex-row align-items-start justify-content-start">
-											<div class="logo_image">
-												<div><img src="images/logo.png" alt=""></div>
-											</div>
-											<div class="logo_content">
-												<div id="logo_text" class="logo_text logo_text_not_ie">The Conference</div>
-												<div class="logo_sub">August 25, 2018 - Miami Marina Bay</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="footer_about_text">
-									<p>Donec quis metus ac arcu luctus accumsan. Nunc in justo tincidunt, sodales nunc id, finibus nibh. Class
-										aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-								</div>
-							</div>
-						</div>
-
-						<!-- Footer Column -->
-						<div class="col-lg-3 footer_col">
-							<div class="footer_links">
-								<ul>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Speakers</a></li>
-									<li><a href="#">Event Dates</a></li>
-									<li><a href="#">Information</a></li>
-									<li><a href="#">Calendar</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- Footer Column -->
-						<div class="col-lg-3 footer_col">
-							<div class="footer_links">
-								<ul>
-									<li><a href="#">Logistics</a></li>
-									<li><a href="#">Our Partners</a></li>
-									<li><a href="#">Testimonials</a></li>
-									<li><a href="#">Price Plans</a></li>
-									<li><a href="#">News</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- Footer Column -->
-						<div class="col-lg-2 footer_col">
-							<div class="footer_links">
-								<ul>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Speakers</a></li>
-									<li><a href="#">Event Dates</a></li>
-									<li><a href="#">Information</a></li>
-									<li><a href="#">Calendar</a></li>
-								</ul>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<div class="footer_extra">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="footer_extra_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
-								<div class="footer_social">
-									<div class="footer_social_title">Follow us on Social Media</div>
-									<ul class="footer_social_list">
-										<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="footer_extra_right ml-lg-auto text-lg-right">
-									<div class="footer_extra_links">
-										<ul>
-											<li><a href="contact.html">Contact us</a></li>
-											<li><a href="#">Sitemap</a></li>
-											<li><a href="#">Privacy</a></li>
-										</ul>
-									</div>
-									<div class="copyright">
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-										Copyright &copy;
-										<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-										<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+	</footer>
 
 	</div>
 
